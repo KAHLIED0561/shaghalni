@@ -1,0 +1,989 @@
+{
+  "main": {
+    "title": "شغلني",
+    "description": "سهّل العقود والعروض في منصة وحدة"
+  },
+  "auth": {
+    "images": {
+      "auth_layout": "موقع بناء حيوي مليان بالآلات، يوضح التطوير النشط لمشروع بناء كبير."
+    },
+    "signin": {
+      "page_title": "تسجيل الدخول | شغلني",
+      "meta_description": "سجّل دخولك في شغلني لتسهيل العقود والعروض في منصة وحدة",
+      "title": "سجّل دخولك في شغلني",
+      "subtitle": "سهّل العقود والعروض في منصة وحدة",
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "اكتب بريدك الإلكتروني",
+        "validation": {
+          "required": "البريد الإلكتروني مطلوب",
+          "invalid": "البريد الإلكتروني غير صالح"
+        }
+      },
+      "password": {
+        "label": "كلمة المرور",
+        "placeholder": "اكتب كلمة مرورك",
+        "show": "عرض",
+        "hide": "إخفاء",
+        "validation": {
+          "required": "كلمة المرور مطلوبة"
+        }
+      },
+      "forgot_password": "نسيت كلمة المرور؟",
+      "remember_me": "تذكرني",
+      "login": "تسجيل الدخول",
+      "is_loading": "جاري تسجيل الدخول...",
+      "no_account": "ما عندك حساب؟",
+      "register": "سجل الآن"
+    },
+    "register": {
+      "page_title": "سجل | شغلني",
+      "meta_description": "سجل في شغلني لتسهيل العقود والعروض في منصة واحدة",
+      "title": "سجل في شغلني",
+      "subtitle": "سهل العقود والعروض في منصة واحدة",
+      "account_type": "نوع الحساب",
+      "personal": "شخصي",
+      "provider": "مقدم خدمة",
+      "provider_type": {
+        "label": "نوع مزود الخدمة",
+        "placeholder": "اختر نوع مزود الخدمة",
+        "freelancer": "عمل حر",
+        "engineering_office": "مكتب هندسي",
+        "contractor": "مقاول",
+        "required": "نوع المقدم مطلوب"
+      },
+      "privacy_policy": {
+        "aggree": "أوافق على",
+        "terms": "الشروط والأحكام",
+        "need_accept": "يجب الموافقة على الشروط والأحكام"
+      },
+      "something_wrong": "حدث خطأ ما، يرجى المحاولة مرة أخرى",
+      "next_btn": "التالي",
+      "is_loading": "جارٍ التسجيل...",
+      "have_account": "هل لديك حساب بالفعل؟",
+      "signin": "تسجيل الدخول",
+      "personal_account": {
+        "page_title": "حساب شخصي | شغلني",
+        "meta_description": "أنشئ حساب شخصي على شغلني لتسهيل العقود والعروض في منصة واحدة",
+        "title": "حساب شخصي",
+        "subtitle": "كن جزءاً من مجتمع شغلني",
+        "name": {
+          "label": "الاسم الكامل",
+          "placeholder": "أدخل اسمك الكامل",
+          "validation": {
+            "required": "الاسم الكامل مطلوب",
+            "invalid": "الاسم الكامل غير صالح، يسمح فقط بالأحرف والمسافات"
+          }
+        },
+        "email": {
+          "label": "البريد الإلكتروني",
+          "placeholder": "أدخل بريدك الإلكتروني",
+          "validation": {
+            "required": "البريد الإلكتروني مطلوب",
+            "invalid": "البريد الإلكتروني غير صالح"
+          }
+        },
+        "password": {
+          "label": "كلمة المرور",
+          "placeholder": "أدخل كلمة المرور",
+          "show": "عرض",
+          "hide": "إخفاء",
+          "validation": {
+            "required": "كلمة المرور مطلوبة",
+            "invalid": "كلمة المرور يجب أن تكون على الأقل 8 أحرف"
+          }
+        },
+        "phone": {
+          "label": "رقم الجوال",
+          "placeholder": "+966",
+          "validation": {
+            "required": "رقم الجوال مطلوب",
+            "invalid": "رقم الجوال غير صالح"
+          }
+        },
+        "gender": {
+          "label": "الجنس",
+          "male": "ذكر",
+          "female": "أنثى"
+        },
+        "location": {
+          "label": "المدينة",
+          "placeholder": "اختر موقعك",
+          "validation": {
+            "required": "المدينة مطلوب"
+          }
+        },
+        "register": "سجل",
+        "is_loading": "جارٍ التسجيل...",
+        "previus": "السابق"
+      },
+      "freelancer": {
+        "page_title": "حساب مقدم خدمة | شغلني",
+        "meta_description": "أنشئ حساب مقدم خدمة على شغلني لتسهيل العقود والعروض في منصة واحدة",
+        "title": "حساب مقدم خدمة",
+        "subtitle": "كن جزءاً من مجتمع شغلني",
+        "name": {
+          "label": "اسم العامل الحر",
+          "placeholder": "أدخل اسم المستقل",
+          "validation": {
+            "required": "اسم المستقل مطلوب",
+            "invalid": "اسم المستقل غير صالح، يسمح فقط بالأحرف والمسافات"
+          }
+        },
+        "email": {
+          "label": "البريد الإلكتروني",
+          "placeholder": "أدخل بريدك الإلكتروني",
+          "validation": {
+            "required": "البريد الإلكتروني مطلوب",
+            "invalid": "البريد الإلكتروني غير صالح"
+          }
+        },
+        "password": {
+          "label": "كلمة المرور",
+          "placeholder": "أدخل كلمة المرور",
+          "show": "عرض",
+          "hide": "إخفاء",
+          "validation": {
+            "required": "كلمة المرور مطلوبة",
+            "invalid": "كلمة المرور يجب أن تكون على الأقل 8 أحرف"
+          }
+        },
+        "phone": {
+          "label": "رقم الجوال",
+          "placeholder": "+966",
+          "validation": {
+            "required": "رقم الجوال مطلوب",
+            "invalid": "رقم الجوال غير صالح"
+          }
+        },
+        "activities": {
+          "label": "الأنشطة",
+          "placeholder": "اختر أنشطتك",
+          "validation": {
+            "required": "الأنشطة مطلوبة"
+          }
+        },
+        "national_id": {
+          "label": "رقم الهوية الوطنية",
+          "placeholder": "أدخل رقم الهوية الوطنية",
+          "validation": {
+            "required": "رقم الهوية الوطنية مطلوب",
+            "invalid": "رقم الهوية الوطنية غير صالح"
+          }
+        },
+        "description": {
+          "label": "الوصف",
+          "placeholder": "أدخل الوصف",
+          "validation": {
+            "required": "الوصف مطلوب"
+          }
+        },
+        "personal_image": {
+          "label": "الصورة الشخصية",
+          "placeholder": "قم بتحميل صورتك الشخصية",
+          "validation": {
+            "required": "الصورة الشخصية مطلوبة",
+            "size": "حجم الصورة يجب أن يكون أقل من 4 ميغابايت",
+            "type": "يجب أن يكون نوع الصورة JPG أو JPEG أو PNG أو WEBP أو HEIC أو HEIF"
+          }
+        },
+        "register": "سجل",
+        "is_loading": "جارٍ التسجيل...",
+        "something_wrong": "حدث خطأ ما، يرجى المحاولة مرة أخرى",
+        "previus": "السابق"
+      },
+      "engineering_contractor": {
+        "page_title": "حساب مقدم خدمة | شغلني",
+        "meta_description": "أنشئ حساب مقدم خدمة على شغلني لتسهيل العقود والعروض في منصة واحدة",
+        "title": "حساب مقدم خدمة",
+        "subtitle": "كن جزءاً من مجتمع شغلني",
+        "name": {
+          "label": "اسم المزود",
+          "engineering_office_label": "اسم المكتب الهندسي",
+          "contractor_label": "اسم المقاول",
+          "placeholder": "أدخل اسم المزود",
+          "validation": {
+            "required": "اسم المزود مطلوب",
+            "invalid": "اسم المزود غير صالح، يسمح فقط بالأحرف والمسافات"
+          }
+        },
+        "email": {
+          "label": "البريد الإلكتروني",
+          "placeholder": "أدخل بريدك الإلكتروني",
+          "validation": {
+            "required": "البريد الإلكتروني مطلوب",
+            "invalid": "البريد الإلكتروني غير صالح"
+          }
+        },
+        "password": {
+          "label": "كلمة المرور",
+          "placeholder": "أدخل كلمة المرور",
+          "show": "عرض",
+          "hide": "إخفاء",
+          "validation": {
+            "required": "كلمة المرور مطلوبة",
+            "invalid": "كلمة المرور يجب أن تكون على الأقل 8 أحرف"
+          }
+        },
+        "phone": {
+          "label": "رقم الجوال",
+          "placeholder": "+966",
+          "validation": {
+            "required": "رقم الجوال مطلوب",
+            "invalid": "رقم الجوال غير صالح"
+          }
+        },
+        "commercial_register": {
+          "label": "السجل التجاري",
+          "placeholder": "أدخل السجل التجاري",
+          "validation": {
+            "required": "السجل التجاري مطلوب",
+            "invalid": "السجل التجاري غير صالح"
+          }
+        },
+        "facility_type": {
+          "label": "نوع المنشأة",
+          "placeholder": "اختر نوع المنشأة",
+          "validation": {
+            "required": "نوع المنشأة مطلوب"
+          },
+          "options": {
+            "organization": "مؤسسة",
+            "company": "شركة"
+          }
+        },
+        "activities": {
+          "label": "الأنشطة",
+          "placeholder": "اختر أنشطتك",
+          "validation": {
+            "required": "الأنشطة مطلوبة"
+          }
+        },
+        "description": {
+          "label": "الوصف",
+          "placeholder": "أدخل الوصف",
+          "validation": {
+            "required": "الوصف مطلوب"
+          }
+        },
+        "logo": {
+          "label": "الشعار",
+          "placeholder": "قم بتحميل شعارك",
+          "validation": {
+            "required": "الشعار مطلوب",
+            "type": "يجب أن يكون نوع الصورة JPG أو JPEG أو PNG أو WEBP أو HEIC أو HEIF",
+            "size": "حجم الصورة يجب أن يكون أقل من 4 ميغابايت"
+          }
+        },
+        "register": "سجل",
+        "is_loading": "جارٍ التسجيل...",
+        "something_wrong": "حدث خطأ ما، يرجى المحاولة مرة أخرى",
+        "previus": "السابق"
+      }
+    },
+    "verify_email": {
+      "tile": "تأكيد بريدك الإلكتروني",
+      "subtitle": "أدخل الرمز المرسل إلى بريدك الإلكتروني",
+      "otp": {
+        "required": "الرمز التأكيدي مطلوب",
+        "invalid": "الرمز التأكيدي غير صالح"
+      },
+      "not_received": {
+        "title": "لم تستلم الرمز؟",
+        "resend": "إعادة الإرسال"
+      },
+      "email_not_found": "حدث خطأ ما، يرجى تحديث الصفحة والمحاولة مرة أخرى لتسجيل الدخول",
+      "verify": "تأكيد",
+      "is_loading": "جارٍ التأكيد..."
+    },
+    "forgot_password": {
+      "page_title": "نسيت كلمة المرور | شغلني",
+      "meta_description": "نسيت كلمة المرور؟ لا تشيل هم! أعد تعيينها بسهولة مع شغلني",
+      "title": "نسيت كلمة المرور",
+      "subtitle": "اكتب بريدك الإلكتروني عشان تستلم رمز الأمان",
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "اكتب بريدك الإلكتروني",
+        "validation": {
+          "required": "البريد الإلكتروني مطلوب",
+          "invalid": "البريد الإلكتروني غير صالح"
+        }
+      },
+      "reset_password": "إعادة تعيين كلمة المرور",
+      "is_loading": "جاري إعادة تعيين كلمة المرور..."
+    },
+    "new_password": {
+      "page_title": "كلمة مرور جديدة | شغلني",
+      "meta_description": "حدد كلمة مرور جديدة لحسابك في شغلني",
+      "title": "كلمة مرور جديدة",
+      "subtitle": "حدد كلمة مرور جديدة لحسابك في شغلني",
+      "password": {
+        "label": "كلمة المرور",
+        "placeholder": "اكتب كلمة مرورك",
+        "show": "عرض",
+        "hide": "إخفاء",
+        "validation": {
+          "required": "كلمة المرور مطلوبة",
+          "invalid": "كلمة المرور يجب أن تكون على الأقل 8 أحرف"
+        }
+      },
+      "confirm_password": {
+        "label": "تأكيد كلمة المرور",
+        "placeholder": "اكتب كلمة مرورك مرة ثانية",
+        "show": "عرض",
+        "hide": "إخفاء",
+        "validation": {
+          "required": "كلمة المرور مطلوبة",
+          "mismatch": "كلمات المرور ما تطابق"
+        }
+      },
+      "set_password": "تغيير كلمة المرور",
+      "is_loading": "جاري تغيير كلمة المرور..."
+    },
+    "verify_otp": {
+      "page_title": "تحقق من الرمز | شغلني",
+      "meta_description": "تحقق من الرمز لمرة واحدة لإعادة تعيين كلمة المرور",
+      "title": "تحقق من الرمز",
+      "subtitle": "اكتب الرمز اللي أرسلناه للبريد الإلكتروني",
+      "otp": {
+        "label": "الرمز لمرة واحدة",
+        "placeholder": "اكتب الرمز",
+        "validation": {
+          "required": "الرمز التأكيدي مطلوب",
+          "invalid": "الرمز التأكيدي غير صالح"
+        }
+      },
+      "did_not_receive": "ما وصلك الرمز؟",
+      "resend": "إعادة إرسال",
+      "resending": "جاري اعادة الارسال...",
+      "sent_message": "تم إرسال الرمز للبريد الإلكتروني. تأكد من صندوق الوارد.",
+      "next": "التالي",
+      "is_loading": "جاري التحقق من الرمز..."
+    }
+  },
+  "home": {
+    "page_title": "شغلني",
+    "meta_description": "سهّل العقود والعروض في منصة وحدة",
+    "images": {
+      "hero": "رجل لابس خوذة ماسك لوح، يرمز لدوره في متابعة السلامة أو تقدم العمل في موقع البناء.",
+      "whyToChoose": "فريق من عمال البناء لابسين ملابس السلامة واقفين في موقع بناء، يتعاونون على مشروعهم الجاري."
+    },
+    "hero": {
+      "title": "أسس متينة،",
+      "subtitle": "مشاريع متميزة.",
+      "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبسيك إليت. عليمكوم كويز إيليت أرقي لاوريت كورسوس يو سيت أميت إبصوم.",
+      "request_service": "اطلب خدمة",
+      "search": {
+        "title": "المشاريع المطروحه",
+        "name_placeholder": "اسم المشروع",
+        "name_required": "اسم المشروع مطلوب",
+        "location_placeholder": "المدينة",
+        "location_required": "المدينة مطلوبة",
+        "service_placeholder": "الخدمة",
+        "service_required": "الخدمة مطلوبة",
+        "search": "بحث"
+      }
+    },
+    "about_services": {
+      "title": {
+        "1": "تعرف على",
+        "2": "خدماتنا"
+      },
+      "cards": {
+        "1": {
+          "title": "مزودي الخدمات",
+          "description": "لوريم إيبسوم دولور سيت أميت، كونسي أديبسيك إليت. نولام تريستيك."
+        },
+        "2": {
+          "title": "مشاريع مميزة",
+          "description": "لوريم إيبسوم دولور سيت أميت، كونسي أديبسيك إليت. نولام تريستيك."
+        },
+        "3": {
+          "title": "مدونات للاطلاع",
+          "description": "لوريم إيبسوم دولور سيت أميت، كونسي أديبسيك إليت. نولام تريستيك."
+        }
+      }
+    },
+    "whyToChooseUs": {
+      "q": "ليش تختارنا؟",
+      "title": "تسهيل العقود و العروض في منصة واحدة",
+      "description": "نسعى إلى تبسيط عمليات التعاقد وعروض الخدمات المتنوعة في مكان موحد، مما يجعل عملية اختيار المقاول المناسب عملية أكثر سلاسة وفعالية.",
+      "reasons": {
+        "1": {
+          "title": "المقاولين الخبراء",
+          "description": "لوريم إيبسوم دولور سيت أميت, ,conse adipiscing elit. ,نولام ,تريستيك ."
+        },
+        "2": {
+          "title": "الدفع الآمن",
+          "description": "لوريم إيبسوم دولور سيت أميت, ,conse adipiscing elit. ,نولام ,تريستيك ."
+        },
+        "3": {
+          "title": "ضمان الجودة",
+          "description": "لوريم إيبسوم دولور سيت أميت, ,conse adipiscing elit. ,نولام ,تريستيك ."
+        }
+      }
+    },
+    "providers": {
+      "header": {
+        "title": "استكشاف مزودي الخدمات",
+        "more": "إظهار المزيد"
+      },
+      "location": "المدينة",
+      "status": "الحالة",
+      "projects": "المشاريع"
+    },
+    "projects": {
+      "header": {
+        "title": "استكشاف أحدث المشاريع",
+        "more": "إظهار المزيد"
+      },
+      "by": "بواسطة",
+      "service": "الخدمة",
+      "location": "المدينة",
+      "neighborhood": "الحي",
+      "pub_date": "تاريخ النشر",
+      "status": "الحالة",
+      "remaining_time": "الوقت المتبقي",
+      "num_offers": "عدد العروض"
+    },
+    "register_provider": {
+      "title": "انضم لنا كمقدم خدمة",
+      "button": "سجل الآن",
+      "image": "عدة رافعات بناء موجودة في موقع بناء، تمثل مرحلة نشطة من تطوير البناء الحضري."
+    },
+    "qa": {
+      "title": "أسئلة شائعة",
+      "image": "عمال بناء يرتدون سترات صفراء وخوذ، يعملون في موقع بناء نشط."
+    }
+  },
+  "profile": {
+    "header": {
+      "editBtn": "تعديل البيانات",
+      "copyBtn": "نسخ الرابط",
+      "address": "المدينة",
+      "phone": "رقم الجوال",
+      "status": "الحالة",
+      "works": "الأعمال",
+      "activities": "الأنشطة",
+      "service": "تعريف الخدمة ",
+      "copy_action": {
+        "title": "تم نسخ الرابط",
+        "description": "تم نسخ الرابط بنجاح, يمكنك مشاركته مع الآخرين"
+      }
+    },
+    "balance": {
+      "header": "يمكنك تحويل الأموال إلى مزود الخدمة بسهولة",
+      "btn": "اضف تحويل"
+    },
+    "latestTransfers": {
+      "header": "اخر التحويلات المالية",
+      "showMoreBtn": "إظهار المزيد",
+      "no_transfers": "لا توجد تحويلات",
+      "cash": "(نقداً)",
+      "card": "(بطاقة مصرفية)",
+      "SAR": "ر.س"
+    },
+    "projects": {
+      "header": "المشاريع ",
+      "no_projects": "لا يوجد مشاريع حتى الان",
+      "showMoreBtn": "إظهار المزيد",
+      "projectStatus": {
+        "all": "الكل",
+        "completed": "المشاريع المكتملة",
+        "inProgress": "قيد التنفيذ"
+      }
+    },
+    "updateProfile": {
+      "title": "تعديل البيانات",
+      "modal_description": "يمكنك تعديل البيانات الخاصة بك من هنا",
+      "cancel_btn": "الغاء",
+      "is_loading": "جاري الحفظ...",
+      "save_btn": "حفظ البيانات",
+      "change_photo": "تغيير الصورة",
+      "something_wrong": "حدث خطأ ما، يرجى المحاولة مرة أخرى",
+      "removeImage": "حذف الصورة",
+      "updated": "تم تحديث البيانات بنجاح",
+      "updated_desc": "تم تحديث بياناتك بنجاح, يمكنك الآن العودة إلى الصفحة الرئيسية",
+      "name": {
+        "freelancer": {
+          "label": "Freelancer Name",
+          "placeholder": "Enter the freelancer name",
+          "validation": {
+            "required": "Freelancer Name is required",
+            "invalid": "Freelancer Name is invalid, only letters and spaces are allowed"
+          }
+        },
+        "customer": {
+          "label": "الاسم الكامل",
+          "placeholder": "أدخل اسمك الكامل",
+          "validation": {
+            "required": "الاسم الكامل مطلوب",
+            "invalid": "الاسم الكامل غير صالح، يسمح فقط بالأحرف والمسافات"
+          }
+        },
+        "provider": {
+          "label": "اسم المزود",
+          "engineering_office_label": "اسم المكتب الهندسي",
+          "contractor_label": "اسم المقاول",
+          "placeholder": "أدخل اسم المزود",
+          "validation": {
+            "required": "اسم المزود مطلوب",
+            "invalid": "اسم المزود غير صالح، يسمح فقط بالأحرف والمسافات"
+          }
+        }
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني",
+        "validation": {
+          "required": "البريد الإلكتروني مطلوب",
+          "invalid": "البريد الإلكتروني غير صالح"
+        }
+      },
+      "password": {
+        "label": "كلمة المرور",
+        "placeholder": "أدخل كلمة المرور",
+        "show": "عرض",
+        "hide": "إخفاء",
+        "validation": {
+          "required": "كلمة المرور مطلوبة",
+          "invalid": "كلمة المرور يجب أن تكون على الأقل 8 أحرف"
+        }
+      },
+      "phone": {
+        "label": "رقم الجوال",
+        "placeholder": "+966",
+        "validation": {
+          "required": "رقم الجوال مطلوب",
+          "invalid": "رقم الجوال غير صالح"
+        }
+      },
+      "gender": {
+        "label": "الجنس",
+        "male": "ذكر",
+        "female": "أنثى"
+      },
+      "location": {
+        "label": "المدينة",
+        "placeholder": "اختر موقعك",
+        "validation": {
+          "required": "المدينة مطلوب"
+        }
+      },
+      "activities": {
+        "label": "الأنشطة",
+        "placeholder": "اختر أنشطتك",
+        "validation": {
+          "required": "الأنشطة مطلوبة"
+        }
+      },
+      "national_id": {
+        "label": "رقم الهوية الوطنية",
+        "placeholder": "أدخل رقم الهوية الوطنية",
+        "validation": {
+          "required": "رقم الهوية الوطنية مطلوب",
+          "invalid": "رقم الهوية الوطنية غير صالح"
+        }
+      },
+      "description": {
+        "label": "الوصف",
+        "placeholder": "أدخل الوصف",
+        "validation": {
+          "required": "الوصف مطلوب"
+        }
+      },
+      "personal_image": {
+        "label": "تغيير الصورة الشخصية",
+        "placeholder": "قم بتحميل صورتك الشخصية",
+        "validation": {
+          "required": "الصورة الشخصية مطلوبة",
+          "size": "حجم الصورة يجب أن يكون أقل من 4 ميغابايت",
+          "type": "يجب أن يكون نوع الصورة JPG أو JPEG أو PNG أو WEBP أو HEIC أو HEIF"
+        }
+      },
+      "commercial_register": {
+        "label": "السجل التجاري",
+        "placeholder": "أدخل السجل التجاري",
+        "validation": {
+          "required": "السجل التجاري مطلوب",
+          "invalid": "السجل التجاري غير صالح"
+        }
+      },
+      "facility_type": {
+        "label": "نوع المنشأة",
+        "placeholder": "اختر نوع المنشأة",
+        "validation": {
+          "required": "نوع المنشأة مطلوب"
+        },
+        "options": {
+          "organization": "مؤسسة",
+          "company": "شركة"
+        }
+      },
+      "logo": {
+        "label": "تغيير صورة الشعار",
+        "placeholder": "قم بتحميل شعارك",
+        "validation": {
+          "required": "الشعار مطلوب",
+          "type": "يجب أن يكون نوع الصورة JPG أو JPEG أو PNG أو WEBP أو HEIC أو HEIF",
+          "size": "حجم الصورة يجب أن يكون أقل من 4 ميغابايت"
+        }
+      }
+    }
+  },
+  "projects": {
+    "page_title": "المشاريع | شغلني",
+    "meta_description": "استكشف مجموعة واسعة من المشاريع في منصة شغلني",
+    "title": "المشاريع",
+    "subtitle": "استكشف مجموعة واسعة من المشاريع في منصة شغلني",
+    "request_service": "اطلب خدمة",
+    "search": {
+      "name_placeholder": "اسم المشروع",
+      "location_placeholder": "المدينة",
+      "service_placeholder": "الخدمة",
+      "status_placeholder": "الحالة",
+      "active": "فعال",
+      "closed": "مغلق",
+      "publish_date_placeholder": "تاريخ النشر",
+      "search": "بحث",
+      "expand": "توسيع",
+      "clear": "مسح الفلاتر"
+    },
+    "no_projects": "لا توجد مشاريع بعد"
+  },
+  "projectDetails": {
+    "page_title": "تفاصيل المشروع | شغلني",
+    "meta_description": "استكشف تفاصيل المشروع على منصة شغلني",
+    "path": {
+      "home": "الرئيسية",
+      "projects": "المشاريع"
+    },
+    "project": {
+      "description": "وصف الخدمة",
+      "location": "المدينة",
+      "neighborhood": "الحي",
+      "service": "الخدمة",
+      "status": "الحالة",
+      "publish_date": "تاريخ النشر",
+      "remaining_time": "الوقت المتبقي",
+      "area": "مساحة الأرض",
+      "floors": "عدد الطوابق",
+      "offers": "العروض",
+      "by": "بواسطة",
+      "activities": "الأنشطة",
+      "btn": "تقديم عرض",
+      "modal": {
+        "title": "تقديم عرض",
+        "description": "أدخل السعر الذي ترغب في تقديمه لهذا المشروع",
+        "apply": "تقديم عرض",
+        "label": "السعر",
+        "placeholder": "أدخل السعر",
+        "validation": {
+          "required": "السعر مطلوب",
+          "invalid": "السعر غير صالح"
+        },
+        "send": "إرسال العرض",
+        "success": "تم إرسال العرض بنجاح",
+        "success_desc": "تم إرسال العرض بنجاح, يمكنك الآن الانتظار لقبول العرض"
+      }
+    },
+    "attachments": {
+      "title": "المرفقات",
+      "no_attachments": "لا توجد مرفقات بعد"
+    },
+    "win_offers": {
+      "title": "العرض الفائز"
+    },
+    "offers": {
+      "title": "العروض",
+      "SAR": "ر.س",
+      "accept": "قبول العرض",
+      "alert": {
+        "title": "هل أنت متأكد تماماً؟",
+        "description": "لن تتمكن من التراجع عن هذا! لذا فكر مرتين قبل قبول هذا العرض.",
+        "cancel": "إلغاء",
+        "accept": "قبول",
+        "inProgress": "جارٍ التنفيذ..."
+      },
+      "no_offers": "لا توجد عروض بعد",
+      "accepted": "تم قبول العرض بنجاح, يمكنك الآن البدء في تنفيذ المشروع"
+    },
+    "noProjectFound": "يبدو أن هذا المشروع غير موجود"
+  },
+  "projectCard": {
+    "service": "الخدمة",
+    "location": "المدينة",
+    "date": "تاريخ النشر",
+    "status": "الحالة",
+    "remaining_time": "الوقت المتبقي",
+    "offers": "المدينة",
+    "by": "بواسطة"
+  },
+  "service_req": {
+    "pagination": {
+      "home": "الرئيسية",
+      "service_req": "طلب خدمة"
+    },
+    "steps": {
+      "0": "نوع الخدمة",
+      "1": "تفاصيل الخدمة",
+      "2": "المرفقات"
+    },
+    "initial": {
+      "title": "نوع الخدمة",
+      "types": {
+        "0": "التعاقد مع فني",
+        "1": "التعاقد مع مقاول عام",
+        "2": "التعاقد مع مصمم داخلي",
+        "3": "التعاقد مع مكتب هندسي",
+        "4": "حساب الكميات وخطط الإنقاذ"
+      },
+      "required": "نوع الخدمة مطلوب",
+      "next": "التالي",
+      "is_loading": "جارٍ التحميل..."
+    },
+    "other": {
+      "drawings": {
+        "label": "الرسومات الهندسية *",
+        "placeholder": "قم برفع الرسومات الهندسية",
+        "required": "الرسومات الهندسية مطلوبة",
+        "size": "يجب أن يكون حجم الرسومات أقل من 8 ميجابايت",
+        "type": "يجب أن يكون نوع الرسومات JPG، JPEG، PNG، WEBP، HEIC، HEIF، PDF، DOC، أو DOCX"
+      },
+      "building": {
+        "label": "رخصة البناء",
+        "placeholder": "قم برفع رخصة البناء",
+        "size": "يجب أن يكون حجم رخصة البناء أقل من 8 ميجابايت",
+        "type": "يجب أن يكون نوع رخصة البناء JPG، JPEG، PNG، WEBP، HEIC، HEIF، PDF، DOC، أو DOCX"
+      }
+    },
+    "name": {
+      "label": "اسم المشروع",
+      "placeholder": "أدخل اسم المشروع",
+      "required": "اسم المشروع مطلوب",
+      "invalid": "اسم المشروع غير صالح"
+    },
+    "req_activities": {
+      "label": "الأنشطة المطلوبة",
+      "placeholder": "اختر الأنشطة المطلوبة",
+      "required": "الأنشطة المطلوبة مطلوبة"
+    },
+    "period": {
+      "label": "الموعد النهائي لاستلام العروض",
+      "placeholder": "اختر الموعد النهائي لاستلام العروض",
+      "required": "الموعد النهائي لاستلام العروض مطلوب"
+    },
+    "city": {
+      "label": "المدينة",
+      "placeholder": "اختر مدينتك",
+      "required": "المدينة مطلوبة"
+    },
+    "neighborhood": {
+      "label": "الحي",
+      "placeholder": "اختر حيك",
+      "required": "الحي مطلوب"
+    },
+    "location_link": {
+      "label": "رابط المدينة",
+      "placeholder": "أدخل رابط المدينة",
+      "required": "رابط المدينة مطلوب",
+      "invalid": "رابط المدينة غير صالح"
+    },
+    "description": {
+      "label": "وصف الخدمة *",
+      "placeholder": "اكتب هنا تفاصيل الخدمة المطلوبة",
+      "required": "وصف الخدمة مطلوب"
+    },
+    "attachments": {
+      "label": "مرفقات أخرى",
+      "placeholder": "قم برفع المرفقات المطلوبة",
+      "size": "يجب أن يكون حجم المرفقات أقل من 8 ميجابايت",
+      "type": "يجب أن يكون نوع المرفقات JPG، JPEG، PNG، WEBP، HEIC، HEIF، PDF، DOC، أو DOCX"
+    },
+    "email": "استلام العروض عبر البريد الإلكتروني",
+    "terms": {
+      "0": "بالمتابعة، أنت توافق على",
+      "1": "الشروط والأحكام"
+    },
+    "next": "التالي",
+    "previous": "السابق",
+    "req_btn": "طلب الخدمة",
+    "is_loading": "جارٍ التحميل...",
+    "created": "تم إنشاء الطلب بنجاح",
+    "created_desc": "تم إنشاء طلب الخدمة بنجاح. ستتلقى عروض من مزودي الخدمات قريبًا."
+  },
+  "provider": {
+    "page_title": "مزودي الخدمة | شغلني",
+    "meta_description": "استكشف مجموعة واسعة من مزودي الخدمة على منصة شغلني",
+    "title": "مزودي الخدمة",
+    "subtitle": "استكشف مجموعة واسعة من مزودي الخدمة على منصة شغلني",
+    "request_service": "طلب خدمة",
+    "search": {
+      "name_placeholder": "اسم مزود الخدمة",
+      "location_placeholder": "المدينة",
+      "service_placeholder": "الخدمة",
+      "provider_type": "نوع مزود الخدمة",
+      "providers": {
+        "0": "التعاقد مع فني",
+        "1": "التعاقد مع مقاول عام",
+        "2": "التعاقد مع مصمم داخلي",
+        "3": "التعاقد مع مكتب هندسي",
+        "4": "حساب الكميات وخطط الإنقاذ"
+      },
+      "facility_type": "نوع المنشأة",
+      "activities": "الأنشطة",
+      "search": "بحث",
+      "expand": "عرض المزيد",
+      "clear": "مسح الفلاتر"
+    },
+    "no_providers": "لم يتم العثور على مزودي خدمة"
+  },
+  "navbar": {
+    "home": "الرئيسية",
+    "providers": "مزودي الخدمات",
+    "projects": "المشاريع",
+    "blogs": "المدونات",
+    "contact": "تواصل معنا",
+    "request_service": "اطلب خدمة",
+    "signin": "تسجيل الدخول",
+    "signup": "التسجيل",
+    "general": "عام",
+    "profile": "الملف الشخصي",
+    "billing": "الفواتير",
+    "support": "الدعم",
+    "provider": "مقدم الخدمة",
+    "customer": "العميل",
+    "logout": "تسجيل الخروج",
+    "chat": "الرسائل",
+    "admin": "ادمن",
+    "office": "مكتب هندسي",
+    "contractor": "مقاول",
+    "freelancer": "عامل حر",
+    "privacy": "سياسة الخصوصية"
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "no_notifications": "لا توجد إشعارات بعد",
+    "close": "إغلاق",
+    "mark_all_as_read": "تحديد الكل كمقروء",
+    "mark_one_as_read": "تحديد كمقروء"
+  },
+  "footer": {
+    "logo": "شغلني",
+    "subtitle": "سهّل العقود والعروض في منصة وحدة",
+    "col1": {
+      "providers": "مقدمو الخدمات",
+      "projects": "المشاريع",
+      "blogs": "المدونات",
+      "contact": "تواصل معنا"
+    },
+    "col2": {
+      "rules": "القوانين والشروط",
+      "privacy": "سياسة الخصوصية",
+      "who": "من نحن"
+    },
+    "col3": {
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "location": "المدينة",
+      "location_value": "الرياض، المملكة العربية السعودية"
+    },
+    "copy_right": "© حقوق الطبع والنشر 2024 جميع الحقوق محفوظة",
+    "follow-us": "تابعنا على",
+    "download-app": "حمل التطبيق"
+  },
+  "share": {
+    "customer": {
+      "account": "حساب شخصي",
+      "message": "مراسلة",
+      "city": "المدينة",
+      "no_projects": "عدد المشاريع",
+      "projects": {
+        "title": "المشاريع",
+        "no_projects": "لا توجد مشاريع حتى الآن",
+        "more": "عرض المزيد"
+      },
+      "more": "عرض المزيد"
+    },
+    "provider": {
+      "freelancer": "مستقل",
+      "engineering_office": "مكتب هندسي",
+      "contractor": "مقاول",
+      "city": "المدينة",
+      "no_projects": "عدد المشاريع",
+      "about": "الوصف:",
+      "projects": {
+        "title": "المشاريع المكتملة",
+        "no_projects": "لا توجد مشاريع حتى الآن",
+        "more": "عرض المزيد"
+      },
+      "reviews": {
+        "title": "التقييمات",
+        "write": "اكتب تقييمًا",
+        "no_reviews": "لا توجد تقييمات حتى الآن",
+        "review": {
+          "label": "التقييم",
+          "placeholder": "اكتب هنا",
+          "send": "إرسال التقييم",
+          "success": "تم إرسال التقييم بنجاح"
+        }
+      },
+      "more": "عرض المزيد"
+    }
+  },
+  "error": {
+    "header": "حدثت مشكلة",
+    "default_message": "حدث خطأ ما، يرجى المحاولة مرة أخرى لاحقاً",
+    "message": "يرجى المحاولة مرة أخرى لاحقاً أو الاتصال بالدعم إذا استمرت المشكلة.",
+    "home": "العودة إلى الصفحة الرئيسية",
+    "try": "حاول مرة أخرى"
+  },
+  "other_pages": {
+    "privacy_policy": "سياسة الخصوصية",
+    "terms_and_conditions": "الشروط والأحكام",
+    "who": "من نحن",
+    "contact_us": {
+      "title": "تواصل معنا",
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني"
+      },
+      "name": {
+        "label": "الاسم",
+        "placeholder": "أدخل اسمك"
+      },
+      "message": {
+        "label": "الرسالة",
+        "placeholder": "أدخل رسالتك"
+      },
+      "phone": "رقم الجوال",
+      "address": "العنوان",
+      "send": "إرسال",
+      "is_loading": "جارٍ الإرسال...",
+      "success": {
+        "label": "تم إرسال الرسالة بنجاح",
+        "description": "تم إرسال رسالتك بنجاح، سنتواصل معك قريبًا."
+      },
+      "something_wrong": "حدث خطأ ما، يرجى تحديث الصفحة ومحاولة إرسال الرسالة مرة أخرى"
+    },
+    "blogs": {
+      "title": "المدونات",
+      "subtitle": "استكشف أحدث المدونات على منصة شغلني",
+      "no_blogs": "لا توجد مدونات بعد"
+    }
+  },
+  "locals": {
+    "change_language": "تغيير اللغة",
+    "arabic": "العربية",
+    "english": "English"
+  },
+  "chat": {
+    "title": "ارفاق صورة",
+    "img_placeholder": "",
+    "select_photo": "اختر صورة من جهازك",
+    "send": "إرسال",
+    "sessionNotFound": "ابداء جلسة جديدة لارسال واستقبال الرسائل",
+    "report": "ابلاغ",
+    "photo": "صورة"
+  }
+}

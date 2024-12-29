@@ -1,0 +1,989 @@
+{
+  "main": {
+    "title": "Shaghalni",
+    "description": "Facilitate contracts and offers in one platform"
+  },
+  "auth": {
+    "images": {
+      "auth_layout": "A vibrant construction site filled with machinery, illustrating the active development of a significant construction project."
+    },
+    "signin": {
+      "page_title": "Sign in | Shaghlni",
+      "meta_description": "Sign in to Shaghlni to facilitate contracts and offers in one platform",
+      "title": "Sign in to Shaghlni",
+      "subtitle": "Facilitate contracts and offers in one platform",
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email",
+        "validation": {
+          "required": "Email Address is required",
+          "invalid": "Email Address is invalid"
+        }
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password",
+        "show": "Show",
+        "hide": "Hide",
+        "validation": {
+          "required": "Password is required"
+        }
+      },
+      "forgot_password": "Forgot password?",
+      "remember_me": "Remember me",
+      "login": "Log in",
+      "is_loading": "Logging in...",
+      "no_account": "Don't have an account?",
+      "register": "Register"
+    },
+    "register": {
+      "page_title": "Register | Shaghlni",
+      "meta_description": "Register to Shaghlni to facilitate contracts and offers in one platform",
+      "title": "Register to Shaghlni",
+      "subtitle": "Facilitate contracts and offers in one platform",
+      "account_type": "Account Type",
+      "personal": "Personal",
+      "provider": "Service Provider",
+      "provider_type": {
+        "label": "Provider Type",
+        "placeholder": "Choose your provider type",
+        "freelancer": "Freelancer",
+        "engineering_office": "Engineering Office",
+        "contractor": "Contractor",
+        "required": "Provider Type is required"
+      },
+      "privacy_policy": {
+        "aggree": "I agree to the",
+        "terms": "Terms and Conditions",
+        "need_accept": "You need to accept the terms and conditions"
+      },
+      "something_wrong": "Something went wrong",
+      "next_btn": "Next",
+      "is_loading": "Loading...",
+      "have_account": "Already have an account?",
+      "signin": "Sign in",
+      "personal_account": {
+        "page_title": "Personal Account | Shaghlni",
+        "meta_description": "Create a personal account on Shaghlni to facilitate contracts and offers in one platform",
+        "title": "Personal Account",
+        "subtitle": "Be part of the Shaghlni community",
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Enter your full name",
+          "validation": {
+            "required": "Full Name is required",
+            "invalid": "Full Name is invalid, only letters and spaces are allowed"
+          }
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter your email",
+          "validation": {
+            "required": "Email Address is required",
+            "invalid": "Email Address is invalid"
+          }
+        },
+        "password": {
+          "label": "Password",
+          "placeholder": "Enter your password",
+          "show": "Show",
+          "hide": "Hide",
+          "validation": {
+            "required": "Password is required",
+            "invalid": "Password must be at least 8 characters long"
+          }
+        },
+        "phone": {
+          "label": "Phone Number",
+          "placeholder": "+966",
+          "validation": {
+            "required": "Phone Number is required",
+            "invalid": "Phone Number is invalid"
+          }
+        },
+        "gender": {
+          "label": "Gender",
+          "male": "Male",
+          "female": "Female"
+        },
+        "location": {
+          "label": "Location",
+          "placeholder": "Choose your location",
+          "validation": {
+            "required": "Location is required"
+          }
+        },
+        "register": "Register",
+        "is_loading": "Registering...",
+        "previus": "Previous"
+      },
+      "freelancer": {
+        "page_title": "Service Provider Account | Shaghlni",
+        "meta_description": "Create a service provider account on Shaghlni to facilitate contracts and offers in one platform",
+        "title": "Service Provider Account",
+        "subtitle": "Be part of the Shaghlni community",
+        "name": {
+          "label": "Freelancer Name",
+          "placeholder": "Enter the freelancer name",
+          "validation": {
+            "required": "Freelancer Name is required",
+            "invalid": "Freelancer Name is invalid, only letters and spaces are allowed"
+          }
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter your email",
+          "validation": {
+            "required": "Email Address is required",
+            "invalid": "Email Address is invalid"
+          }
+        },
+        "password": {
+          "label": "Password",
+          "placeholder": "Enter your password",
+          "show": "Show",
+          "hide": "Hide",
+          "validation": {
+            "required": "Password is required",
+            "invalid": "Password must be at least 8 characters long"
+          }
+        },
+        "phone": {
+          "label": "Phone Number",
+          "placeholder": "+966",
+          "validation": {
+            "required": "Phone Number is required",
+            "invalid": "Phone Number is invalid"
+          }
+        },
+        "activities": {
+          "label": "Activities",
+          "placeholder": "Choose your activities",
+          "validation": {
+            "required": "Activities are required"
+          }
+        },
+        "national_id": {
+          "label": "National ID",
+          "placeholder": "Enter the national ID",
+          "validation": {
+            "required": "National ID is required",
+            "invalid": "National ID is invalid"
+          }
+        },
+        "description": {
+          "label": "Description",
+          "placeholder": "Enter the description",
+          "validation": {
+            "required": "Description is required"
+          }
+        },
+        "personal_image": {
+          "label": "Personal Image",
+          "placeholder": "Upload your personal image",
+          "validation": {
+            "required": "Personal Image is required",
+            "size": "Image size should be less than 4MB",
+            "type": "Image type should be JPG, JPEG, PNG, WEBP, HEIC, or HEIF"
+          }
+        },
+        "register": "Register",
+        "is_loading": "Registering...",
+        "something_wrong": "Something went wrong, please refresh the page and try to register again",
+        "previus": "Previous"
+      },
+      "engineering_contractor": {
+        "page_title": "Service Provider Account | Shaghlni",
+        "meta_description": "Create a service provider account on Shaghlni to facilitate contracts and offers in one platform",
+        "title": "Service Provider Account",
+        "subtitle": "Be part of the Shaghlni community",
+        "name": {
+          "label": "Provider Name",
+          "engineering_office_label": "Engineering Office Name",
+          "contractor_label": "Contractor Name",
+          "placeholder": "Enter the provider name",
+          "validation": {
+            "required": "Provider Name is required",
+            "invalid": "Provider Name is invalid, only letters and spaces are allowed"
+          }
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter your email",
+          "validation": {
+            "required": "Email Address is required",
+            "invalid": "Email Address is invalid"
+          }
+        },
+        "password": {
+          "label": "Password",
+          "placeholder": "Enter your password",
+          "show": "Show",
+          "hide": "Hide",
+          "validation": {
+            "required": "Password is required",
+            "invalid": "Password must be at least 8 characters long"
+          }
+        },
+        "phone": {
+          "label": "Phone Number",
+          "placeholder": "+966",
+          "validation": {
+            "required": "Phone Number is required",
+            "invalid": "Phone Number is invalid"
+          }
+        },
+        "commercial_register": {
+          "label": "Commercial Register",
+          "placeholder": "Enter the commercial register",
+          "validation": {
+            "required": "Commercial Register is required",
+            "invalid": "Commercial Register is invalid"
+          }
+        },
+        "facility_type": {
+          "label": "Facility Type",
+          "placeholder": "Choose your facility type",
+          "validation": {
+            "required": "Facility Type is required"
+          },
+          "options": {
+            "organization": "Organization",
+            "company": "Company"
+          }
+        },
+        "activities": {
+          "label": "Activities",
+          "placeholder": "Choose your activities",
+          "validation": {
+            "required": "Activities are required"
+          }
+        },
+        "description": {
+          "label": "Description",
+          "placeholder": "Enter the description",
+          "validation": {
+            "required": "Description is required"
+          }
+        },
+        "logo": {
+          "label": "Logo",
+          "placeholder": "Upload your logo",
+          "validation": {
+            "required": "Logo is required",
+            "type": "Image type should be JPG, JPEG, PNG, WEBP, HEIC, or HEIF",
+            "size": "Image size should be less than 4MB"
+          }
+        },
+        "register": "Register",
+        "is_loading": "Registering...",
+        "something_wrong": "Something went wrong, please refresh the page and try to register again",
+        "previus": "Previous"
+      }
+    },
+    "forgot_password": {
+      "page_title": "Forgot password | Shaghlni",
+      "meta_description": "Forgot your password? No worries! Reset it easily with Shaghlni",
+      "title": "Forget Password",
+      "subtitle": "Enter your email address to receive security code",
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email",
+        "validation": {
+          "required": "Email Address is required",
+          "invalid": "Email Address is invalid"
+        }
+      },
+      "reset_password": "Reset Password",
+      "is_loading": "Resetting password..."
+    },
+    "verify_email": {
+      "tile": "Verify Your Email",
+      "subtitle": "Enter the code sent to your email",
+      "otp": {
+        "required": "OTP is required",
+        "invalid": "OTP must be 6 digits long"
+      },
+      "not_received": {
+        "title": "Didn't receive the code?",
+        "resend": "Resend"
+      },
+      "email_not_found": "Something went wrong, please refresh the page and try to login",
+      "verify": "Verify",
+      "is_loading": "Verifying..."
+    },
+    "new_password": {
+      "page_title": "New password | Shaghlni",
+      "meta_description": "Set a new password for your Shaghlni account",
+      "title": "New Password",
+      "subtitle": "Set a new password for your Shaghlni account",
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password",
+        "show": "Show",
+        "hide": "Hide",
+        "validation": {
+          "required": "Password is required",
+          "invalid": "Password must be at least 8 characters long"
+        }
+      },
+      "confirm_password": {
+        "label": "Confirm Password",
+        "placeholder": "Enter your password again",
+        "show": "Show",
+        "hide": "Hide",
+        "validation": {
+          "required": "Password is required",
+          "mismatch": "Passwords do not match"
+        }
+      },
+      "set_password": "Change Password",
+      "is_loading": "Changing password..."
+    },
+    "verify_otp": {
+      "page_title": "Verify Code | Shaghlni",
+      "meta_description": "Verify your OTP to reset your password",
+      "title": "Verify Code",
+      "subtitle": "Enter the code sent to your email",
+      "otp": {
+        "label": "OTP",
+        "placeholder": "Enter the code",
+        "validation": {
+          "required": "OTP is required",
+          "invalid": "OTP must be 6 digits"
+        }
+      },
+      "did_not_receive": "Didn't receive the code?",
+      "resend": "Resend",
+      "resending": "Resending...",
+      "sent_message": "Code sent to your email. Please check your inbox.",
+      "next": "Next",
+      "is_loading": "Verifying code..."
+    }
+  },
+  "home": {
+    "page_title": "Shaghlni",
+    "meta_description": "Facilitate contracts and offers in one platform",
+    "images": {
+      "hero": "A man with a hardhat holds a clipboard, signifying his role in monitoring safety or progress at a construction site.",
+      "whyToChoose": "A team of construction workers in safety attire standing on a construction site, collaborating on their ongoing project."
+    },
+    "hero": {
+      "title": "Strong foundations,",
+      "subtitle": "Outstanding projects.",
+      "description": "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit. Aliquam quis elit arcu laoreet cursus eu sit amet ipsum.",
+      "request_service": "Request Service",
+      "search": {
+        "title": "Search for Projects",
+        "name_placeholder": "Project Name",
+        "name_required": "Project Name is required",
+        "location_placeholder": "Location",
+        "location_required": "Location is required",
+        "service_placeholder": "Service",
+        "service_required": "Service is required",
+        "search": "Search"
+      }
+    },
+    "about_services": {
+      "title": {
+        "1": "Learn about",
+        "2": "Our Services"
+      },
+      "cards": {
+        "1": {
+          "title": "Service Providers",
+          "description": "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit. Nullam tristique."
+        },
+        "2": {
+          "title": "Outstanding Projects",
+          "description": "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit. Nullam tristique."
+        },
+        "3": {
+          "title": "Blogs to Explore",
+          "description": "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit. Nullam tristique."
+        }
+      }
+    },
+    "whyToChooseUs": {
+      "q": "Why choose us?",
+      "title": "Facilitating contracts and offers in one platform",
+      "description": "We aim to simplify the contracting and service offering processes in a unified place, making it easier and faster to choose the right contractor.",
+      "reasons": {
+        "1": {
+          "title": "Expert Contractors",
+          "description": "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit. Nullam tristique."
+        },
+        "2": {
+          "title": "Secure Payment",
+          "description": "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit. Nullam tristique."
+        },
+        "3": {
+          "title": "Quality Assurance",
+          "description": "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit. Nullam tristique."
+        }
+      }
+    },
+    "providers": {
+      "header": {
+        "title": "Explore Service Providers",
+        "more": "Show More"
+      },
+      "location": "Location",
+      "status": "Status",
+      "projects": "Projects"
+    },
+    "projects": {
+      "header": {
+        "title": "Explore the Latest Projects",
+        "more": "Show More"
+      },
+      "by": "By",
+      "service": "Service",
+      "location": "Location",
+      "neighborhood": "Neighborhood",
+      "pub_date": "Publication Date",
+      "status": "Status",
+      "remaining_time": "Remaining Time",
+      "num_offers": "Number of Offers"
+    },
+    "register_provider": {
+      "title": "Join us as a Service Provider",
+      "button": "Register Now",
+      "image": "Multiple construction cranes positioned at a building site, representing the active phase of urban construction and development."
+    },
+    "qa": {
+      "title": "Frequently Asked Questions",
+      "image": "Construction workers wearing yellow vests and hard hats collaborate on a building site, ensuring safety and efficiency."
+    }
+  },
+  "profile": {
+    "header": {
+      "editBtn": "Edit profile",
+      "copyBtn": "Copy link",
+      "address": "Address",
+      "phone": "Mobile number",
+      "status": "Status",
+      "works": "Works",
+      "activities": "Activities",
+      "service": "Service definition",
+      "copy_action": {
+        "title": "Link copied",
+        "description": "You can now paste the link where you want"
+      }
+    },
+    "balance": {
+      "header": "You can easily transfer money to provider.",
+      "btn": "Add transaction"
+    },
+    "latestTransfers": {
+      "header": "Latest Money Transfers",
+      "showMoreBtn": "Show more",
+      "no_transfers": "No money transfers yet",
+      "cash": "(Cash)",
+      "card": "(Bank card)",
+      "SAR": "SAR"
+    },
+    "projects": {
+      "header": "Projects",
+      "no_projects": "There are no projects yet",
+      "showMoreBtn": "Show more",
+      "projectStatus": {
+        "all": "All",
+        "completed": "Completed Projects",
+        "inProgress": "In Progress"
+      }
+    },
+    "updateProfile": {
+      "title": "Edit Profile",
+      "modal_description": "Update your profile information",
+      "cancel_btn": "Cancel",
+      "is_loading": "Saving changes...",
+      "save_btn": "Save Changes",
+      "change_photo": "Change profile picture",
+      "something_wrong": "Something went wrong, please refresh the page and try to register again",
+      "removeImage": "Remove Image",
+      "updated": "Profile updated successfully",
+      "updated_desc": "Your profile has been updated successfully.",
+      "name": {
+        "freelancer": {
+          "label": "Freelancer Name",
+          "placeholder": "Enter the freelancer name",
+          "validation": {
+            "required": "Freelancer Name is required",
+            "invalid": "Freelancer Name is invalid, only letters and spaces are allowed"
+          }
+        },
+        "customer": {
+          "label": "Full Name",
+          "placeholder": "Enter your full name",
+          "validation": {
+            "required": "Full Name is required",
+            "invalid": "Full Name is invalid, only letters and spaces are allowed"
+          }
+        },
+        "provider": {
+          "label": "Provider Name",
+          "engineering_office_label": "Engineering Office Name",
+          "contractor_label": "Contractor Name",
+          "placeholder": "Enter the provider name",
+          "validation": {
+            "required": "Provider Name is required",
+            "invalid": "Provider Name is invalid, only letters and spaces are allowed"
+          }
+        }
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email",
+        "validation": {
+          "required": "Email Address is required",
+          "invalid": "Email Address is invalid"
+        }
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password",
+        "show": "Show",
+        "hide": "Hide",
+        "validation": {
+          "required": "Password is required",
+          "invalid": "Password must be at least 8 characters long"
+        }
+      },
+      "phone": {
+        "label": "Phone Number",
+        "placeholder": "+966",
+        "validation": {
+          "required": "Phone Number is required",
+          "invalid": "Phone Number is invalid"
+        }
+      },
+      "gender": {
+        "label": "Gender",
+        "male": "Male",
+        "female": "Female"
+      },
+      "location": {
+        "label": "Location",
+        "placeholder": "Choose your location",
+        "validation": {
+          "required": "Location is required"
+        }
+      },
+      "activities": {
+        "label": "Activities",
+        "placeholder": "Choose your activities",
+        "validation": {
+          "required": "Activities are required"
+        }
+      },
+      "national_id": {
+        "label": "National ID",
+        "placeholder": "Enter the national ID",
+        "validation": {
+          "required": "National ID is required",
+          "invalid": "National ID is invalid"
+        }
+      },
+      "description": {
+        "label": "Description",
+        "placeholder": "Enter the description",
+        "validation": {
+          "required": "Description is required"
+        }
+      },
+      "personal_image": {
+        "label": "Update personal Image",
+        "placeholder": "Upload your personal image",
+        "validation": {
+          "required": "Personal Image is required",
+          "size": "Image size should be less than 4MB",
+          "type": "Image type should be JPG, JPEG, PNG, WEBP, HEIC, or HEIF"
+        }
+      },
+      "commercial_register": {
+        "label": "Commercial Register",
+        "placeholder": "Enter the commercial register",
+        "validation": {
+          "required": "Commercial Register is required",
+          "invalid": "Commercial Register is invalid"
+        }
+      },
+      "facility_type": {
+        "label": "Facility Type",
+        "placeholder": "Choose your facility type",
+        "validation": {
+          "required": "Facility Type is required"
+        },
+        "options": {
+          "organization": "Organization",
+          "company": "Company"
+        }
+      },
+      "logo": {
+        "label": "Update logo Image",
+        "placeholder": "Upload your logo",
+        "validation": {
+          "required": "Logo is required",
+          "type": "Image type should be JPG, JPEG, PNG, WEBP, HEIC, or HEIF",
+          "size": "Image size should be less than 4MB"
+        }
+      }
+    }
+  },
+  "projects": {
+    "page_title": "Projects | Shaghlni",
+    "meta_description": "Explore a wide range of projects on the Shaghlni platform",
+    "title": "Projects",
+    "subtitle": "Explore a wide range of projects on the Shaghlni platform",
+    "request_service": "Request Service",
+    "search": {
+      "name_placeholder": "Project Name",
+      "location_placeholder": "Location",
+      "service_placeholder": "Service",
+      "status_placeholder": "Status",
+      "active": "Active",
+      "closed": "Closed",
+      "publish_date_placeholder": "Publish Date",
+      "search": "Search",
+      "expand": "Expand",
+      "clear": "Clear filters"
+    },
+    "no_projects": "No projects found"
+  },
+  "projectDetails": {
+    "page_title": "Project Details | Shaghlni",
+    "meta_description": "Explore the details of the project on the Shaghlni platform",
+    "path": {
+      "home": "Home",
+      "projects": "Projects"
+    },
+    "project": {
+      "description": "Service description",
+      "location": "Location",
+      "neighborhood": "Neighborhood",
+      "service": "Service",
+      "status": "Status",
+      "publish_date": "Publish Date",
+      "remaining_time": "Remaining Time",
+      "area": "Landing area",
+      "floors": "Number of floors",
+      "offers": "Offers",
+      "by": "By",
+      "activities": "Activities",
+      "btn": "Submit offer",
+      "modal": {
+        "title": "Submit an offer",
+        "description": "Enter the price you want to offer for this project",
+        "apply": "Add an offer",
+        "label": "price",
+        "placeholder": "Enter the price",
+        "validation": {
+          "required": "Price is required",
+          "invalid": "Price is invalid"
+        },
+        "send": "Send offer",
+        "success": "Offer sent successfully",
+        "success_desc": "The offer has been successfully sent, you can now wait for the offer to be accepted"
+      }
+    },
+    "attachments": {
+      "title": "Attachments",
+      "no_attachments": "No attachments yet"
+    },
+    "win_offers": {
+      "title": "Winning offer"
+    },
+    "offers": {
+      "title": "Offers",
+      "SAR": "SAR",
+      "accept": "ِAccept offer",
+      "alert": {
+        "title": "Are you absolutely sure?",
+        "description": "You won't be able to revert this! So think twice before accepting this offer.",
+        "cancel": "Cancel",
+        "accept": "Accept",
+        "inProgress": "In progress..."
+      },
+      "no_offers": "No offers yet",
+      "accepted": "The offer has been successfully accepted, you can now start implementing the project"
+    },
+    "noProjectFound": "It seems that the project you are looking for does not exist"
+  },
+  "projectCard": {
+    "service": "Service",
+    "location": "Location",
+    "date": "Publish date",
+    "status": "Status",
+    "remaining_time": "Remaining Time",
+    "offers": "Number of Offers",
+    "by": "By"
+  },
+  "service_req": {
+    "pagination": {
+      "home": "Home",
+      "service_req": "Service Request"
+    },
+    "steps": {
+      "0": "Service type",
+      "1": "Service details",
+      "2": "Attachments"
+    },
+    "initial": {
+      "title": "Service type",
+      "types": {
+        "0": "Hire a technician",
+        "1": "Hiring a general contractor",
+        "2": "Hire an interior designer",
+        "3": "Contracting with an engineering office",
+        "4": "Quantity surveying and rescue plans"
+      },
+      "required": "Service type is required",
+      "next": "Next",
+      "is_loading": "Loading..."
+    },
+    "other": {
+      "drawings": {
+        "label": "Engineering drawings *",
+        "placeholder": "Upload the engineering drawings",
+        "required": "Engineering drawings are required",
+        "size": "Drawing size should be less than 8MB",
+        "type": "Drawing type should be JPG, JPEG, PNG, WEBP, HEIC, HEIF, PDF, DOC, or DOCX"
+      },
+      "building": {
+        "label": "Building permit",
+        "placeholder": "Upload the building permit",
+        "size": "Building permit size should be less than 8MB",
+        "type": "Building permit type should be JPG, JPEG, PNG, WEBP, HEIC, HEIF, PDF, DOC, or DOCX"
+      }
+    },
+    "name": {
+      "label": "Project Name",
+      "placeholder": "Enter the Project name",
+      "required": "Project Name is required",
+      "invalid": "Project Name is invalid"
+    },
+    "req_activities": {
+      "label": "Requested Activities",
+      "placeholder": "Choose the requested activities",
+      "required": "Requested Activities are required"
+    },
+    "period": {
+      "label": "Deadline for receiving offers",
+      "placeholder": "Choose the deadline for receiving offers",
+      "required": "Deadline for receiving offers is required"
+    },
+    "city": {
+      "label": "City",
+      "placeholder": "Choose your city",
+      "required": "City is required"
+    },
+    "neighborhood": {
+      "label": "Neighborhood",
+      "placeholder": "Choose your neighborhood",
+      "required": "Neighborhood is required"
+    },
+    "location_link": {
+      "label": "Location Link",
+      "placeholder": "Enter the location link",
+      "required": "Location Link is required",
+      "invalid": "Location Link is invalid"
+    },
+    "description": {
+      "label": "Service Description *",
+      "placeholder": "Write here the details of the required service",
+      "required": "Service Description is required"
+    },
+    "attachments": {
+      "label": "Other Attachments",
+      "placeholder": "Upload the required attachments",
+      "size": "Attachment size should be less than 8MB",
+      "type": "Attachment type should be JPG, JPEG, PNG, WEBP, HEIC, HEIF, PDF, DOC, or DOCX"
+    },
+    "email": "Receive offers by email",
+    "terms": {
+      "0": "By continuing, you agree to",
+      "1": "Terms and Conditions"
+    },
+    "next": "Next",
+    "previous": "Previous",
+    "req_btn": "Request Service",
+    "is_loading": "Loading...",
+    "created": "Service request created successfully",
+    "created_desc": "Your service request has been created successfully. You will receive offers from service providers soon."
+  },
+  "provider": {
+    "page_title": "Service Provider | Shaghlni",
+    "meta_description": "Explore a wide range of service providers on the Shaghlni platform",
+    "title": "Service Providers",
+    "subtitle": "Explore a wide range of service providers on the Shaghlni platform",
+    "request_service": "Request Service",
+    "search": {
+      "name_placeholder": "Service Provider Name",
+      "location_placeholder": "City",
+      "service_placeholder": "Service",
+      "provider_type": "Service Provider Type",
+      "providers": {
+        "0": "Hire a technician",
+        "1": "Hiring a general contractor",
+        "2": "Hire an interior designer",
+        "3": "Contracting with an engineering office",
+        "4": "Quantity surveying and rescue plans"
+      },
+      "facility_type": "Facility Type",
+      "activities": "Activities",
+      "search": "Search",
+      "expand": "Expand",
+      "clear": "Clear filters"
+    },
+    "no_providers": "No service providers found"
+  },
+  "navbar": {
+    "home": "Home",
+    "providers": "Service Providers",
+    "projects": "Projects",
+    "blogs": "Blogs",
+    "contact": "Contact Us",
+    "request_service": "Request Service",
+    "signin": "Sign in",
+    "signup": "Register",
+    "general": "General",
+    "profile": "Profile",
+    "billing": "Billing",
+    "support": "Support",
+    "provider": "Service Provider",
+    "customer": "Customer",
+    "logout": "Log out",
+    "chat": "Chat",
+    "admin": "Admin",
+    "office": "Office",
+    "contractor": "Contractor",
+    "freelancer": "Freelancer",
+    "privacy": "Privacy Policy"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "no_notifications": "No notifications yet",
+    "close": "Close",
+    "mark_all_as_read": "Mark all as read",
+    "mark_one_as_read": "Mark as read"
+  },
+  "footer": {
+    "logo": "Shaghlni",
+    "subtitle": "Facilitate contracts and offers on one platform",
+    "col1": {
+      "providers": "Service Providers",
+      "projects": "Projects",
+      "blogs": "Blogs",
+      "contact": "Contact Us"
+    },
+    "col2": {
+      "rules": "Terms and Conditions",
+      "privacy": "Privacy Policy",
+      "who": "Who We Are"
+    },
+    "col3": {
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location",
+      "location_value": "Riyadh, Saudi Arabia"
+    },
+    "copy_right": "© Copyright 2024 All Rights Reserved",
+    "follow-us": "Follow Us On",
+    "download-app": "Download App"
+  },
+  "share": {
+    "customer": {
+      "account": "Personal Account",
+      "message": "message",
+      "city": "City",
+      "no_projects": "Number of Projects",
+      "projects": {
+        "title": "Projects",
+        "no_projects": "No projects yet",
+        "more": "Show More"
+      },
+      "more": "Show More"
+    },
+    "provider": {
+      "freelancer": "Freelancer",
+      "engineering_office": "Engineering Office",
+      "contractor": "Contractor",
+      "city": "City",
+      "no_projects": "Number of Projects",
+      "about": "Description:",
+      "projects": {
+        "title": "Completed Projects",
+        "no_projects": "No projects yet",
+        "more": "Show More"
+      },
+      "reviews": {
+        "title": "Reviews",
+        "write": "Write a review",
+        "no_reviews": "No reviews yet",
+        "review": {
+          "label": "Review",
+          "placeholder": "Write here",
+          "send": "Send Review",
+          "success": "Review sent successfully"
+        }
+      },
+      "more": "Show More"
+    }
+  },
+  "error": {
+    "header": "There was a problem",
+    "default_message": "Something went wrong, please try again later",
+    "message": "Please try again later or contact support if the problem persists.",
+    "home": "Go back home",
+    "try": "Try again"
+  },
+  "other_pages": {
+    "privacy_policy": "Privacy Policy",
+    "terms_and_conditions": "Terms and Conditions",
+    "who": "Who We Are",
+    "contact_us": {
+      "title": "Contact Us",
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email"
+      },
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Enter your message"
+      },
+      "phone": "Mobile number",
+      "address": "Address",
+      "send": "Send",
+      "is_loading": "Sending...",
+      "success": {
+        "label": "Message sent successfully",
+        "description": "Your message has been sent successfully, we will contact you soon."
+      },
+      "something_wrong": "Something went wrong, please refresh the page and try to send the message again"
+    },
+    "blogs": {
+      "title": "Blogs",
+      "subtitle": "Explore the latest blogs on the Shaghlni platform",
+      "no_blogs": "No blogs found"
+    }
+  },
+  "locals": {
+    "change_language": "Change language",
+    "arabic": "العربية",
+    "english": "English"
+  },
+  "chat": {
+    "title": "Upload Image",
+    "img_placeholder": "",
+    "select_photo": "Choose an image from your device",
+    "send": "Send",
+    "sessionNotFound": "Start a new session to send and receive messages",
+    "report": "Report",
+    "photo": "Photo"
+  }
+}
