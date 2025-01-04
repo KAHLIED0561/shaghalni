@@ -18,7 +18,7 @@ interface IProps {
   className: string;
   content?: ReactNode;
   amount: number;
-  financialTransferId?: number;
+  financialTransferId?: number | string;
 }
 
 const MoyasarPayment = ({ title, className, content, amount, financialTransferId }: IProps) => {

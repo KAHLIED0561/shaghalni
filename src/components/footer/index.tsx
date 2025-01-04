@@ -23,22 +23,22 @@ export const Footer = async () => {
 
           <ul className="space-y-2">
             <li>
-              <Link href="/" className="hover:underline">
+              <Link href="/providers" className="hover:underline">
                 {t("col1.providers")}
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:underline">
+              <Link href="/projects" className="hover:underline">
                 {t("col1.projects")}
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:underline">
+              <Link href="/blogs" className="hover:underline">
                 {t("col1.blogs")}
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:underline">
+              <Link href="/contact" className="hover:underline">
                 {t("col1.contact")}
               </Link>
             </li>
@@ -46,17 +46,17 @@ export const Footer = async () => {
 
           <ul className="space-y-2">
             <li>
-              <Link href="/" className="hover:underline">
+              <Link href="/terms-conditions" className="hover:underline">
                 {t("col2.rules")}
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:underline">
+              <Link href="/privacy-policy" className="hover:underline">
                 {t("col2.privacy")}
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:underline">
+              <Link href="/who-are-we" className="hover:underline">
                 {t("col2.who")}
               </Link>
             </li>

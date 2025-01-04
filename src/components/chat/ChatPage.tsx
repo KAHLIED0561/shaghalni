@@ -1,8 +1,14 @@
 "use client";
 
+import { Loader2Icon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+
+import { createHeaders } from "@/lib/createHeaders";
+import { cn } from "@/lib/utils";
+
+import { useGetData } from "@/hooks/useFetch";
 
 import { ChatContext } from "@/providers/chat.context";
 
@@ -12,11 +18,17 @@ import { ChatSessionItem, ChatSessions } from "@/schemas/chat";
 import { socket } from "@/socket";
 
 const ChatPage = ({ userId }: { userId: string }) => {
+  const headers = createHeaders();
   const t = useTranslations("chat");
 
   const [isConnected, setIsConnected] = useState(false);
   const [sessionMessages, setSessionMessages] = useState<ChatSessionItem>();
   const [activeSession, setActiveSession] = useState<ChatSessions>();
+
+  const { data: sessionItem, isLoading } = useGetData<ChatSessions[]>({
+    endpoint: "/chat/sessions",
+    config: { headers },
+  });
 
   useEffect(() => {
     socket.connect();
@@ -46,6 +58,17 @@ const ChatPage = ({ userId }: { userId: string }) => {
     };
   }, []);
 
+  if (isLoading) {
+    return (
+      <div className="fixed inset-0 z-50 flex justify-center items-center bg-white">
+        {/* <div className="animate-spin rounded-full shrink-0 h-20 w-20 border-4 border-primaryClr border-y-transparent"></div> */}
+        <Loader2Icon className="animate-spin text-primaryClr" size={60} />
+      </div>
+    );
+  }
+
+  const allSessions = sessionItem?.status === "success" ? sessionItem.response : [];
+
   return (
     <ChatContext.Provider
       value={{
@@ -58,7 +81,11 @@ const ChatPage = ({ userId }: { userId: string }) => {
     >
       <div className="grid grid-cols-12 h-dvh pt-24 pb-4 gap-6">
         <div
-          className={`col-span-full h-full overflow-y-auto ${activeSession ? "block" : "hidden"} md:block md:col-span-7 lg:col-span-8`}
+          className={cn(
+            "col-span-full h-full overflow-y-auto md:block md:col-span-7 lg:col-span-8",
+            activeSession ? "block" : "hidden",
+            allSessions.length === 0 && !sessionMessages && "md:col-span-12 lg:col-span-12"
+          )}
         >
           {!isConnected || !activeSession ? (
             <div className="rounded-2.5xl border border-gray-200 h-full flex flex-col justify-center items-center">
@@ -77,7 +104,9 @@ const ChatPage = ({ userId }: { userId: string }) => {
           )}
         </div>
 
-        <AllSessions newMessages={sessionMessages} />
+        {(allSessions.length > 0 || sessionMessages) && (
+          <AllSessions newMessages={sessionMessages} sessionItem={allSessions} />
+        )}
       </div>
     </ChatContext.Provider>
   );

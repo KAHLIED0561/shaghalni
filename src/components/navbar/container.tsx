@@ -58,6 +58,14 @@ export const NavbarContainer = ({ isLogged }: NavbarContainerProps) => {
             <li>
               <Link href="/contact">{navT("contact")}</Link>
             </li>
+            <li>
+              <Link
+                href="/request-service"
+                className="inline-block py-2 px-6 rounded-2.5xl text-sm 4xl:text-2xl bg-primaryClr-600 transition-colors hover:bg-primaryClr-500 font-medium"
+              >
+                {t("hero.request_service")}
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="items-center gap-4 hidden lg:flex">
