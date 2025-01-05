@@ -2,7 +2,6 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 import { z } from "zod";
 
 import { cn } from "@/lib/utils";
@@ -46,12 +45,12 @@ export const HeroSection = () => {
             <span className="block">{t("hero.subtitle")}</span>
           </h1>
           <p className="max-w-lg 4xl:max-w-2xl text-lg 4xl:text-2xl">{t("hero.description")}</p>
-          <Link
+          {/* <Link
             href="/request-service"
             className="inline-block py-4 px-6 rounded-2.5xl 4xl:text-2xl bg-primaryClr-600 transition-colors hover:bg-primaryClr-500 font-medium"
           >
             {t("hero.request_service")}
-          </Link>
+          </Link> */}
         </div>
         <ProjectsForm location={location} />
       </div>
