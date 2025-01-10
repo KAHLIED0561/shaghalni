@@ -28,20 +28,22 @@ export const QaSection = () => {
       <h2 className="font-semibold text-4xl text-pretty">{t("title")}</h2>
       <div className="flex justify-between gap-8">
         <div className="rounded-2.5xl border border-gray-200 bg-gray-50 shadow flex-1 h-fit container py-4">
-          <Accordion type="single" collapsible defaultValue={qaList[0].id.toString()}>
-            {qaList.map(({ id, qTitle, qAnswer }, idx) => (
-              <AccordionItem
-                key={id}
-                value={`${id}`}
-                className={cn("text-start", idx === qaList.length - 1 ? "border-b-0" : "")}
-              >
-                <AccordionTrigger className="font-medium text-lg xs:text-xl hover:no-underline text-start">
-                  {qTitle}
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-500 text-base">{qAnswer}</AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          {qaList?.length > 0 && (
+            <Accordion type="single" collapsible defaultValue={qaList?.[0].id.toString()}>
+              {qaList.map(({ id, qTitle, qAnswer }, idx) => (
+                <AccordionItem
+                  key={id}
+                  value={`${id}`}
+                  className={cn("text-start", idx === qaList.length - 1 ? "border-b-0" : "")}
+                >
+                  <AccordionTrigger className="font-medium text-lg xs:text-xl hover:no-underline text-start">
+                    {qTitle}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-500 text-base">{qAnswer}</AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          )}
         </div>
         <div className="hidden lg:block">
           <Image
