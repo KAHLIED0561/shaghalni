@@ -30,7 +30,7 @@ const DeleteProject = ({ projectId }: { projectId: string | number }) => {
   const [inProgress, setInProgress] = useState(false);
 
   const headers = createHeaders();
-  const endpoint = `/projects/${projectId}`;
+  const endpoint = `/requests/${projectId}`;
   const props: FetchData = { endpoint, config: { headers: { ...headers, lang } } };
   const { mutateAsync } = useDeleteData(props);
 
