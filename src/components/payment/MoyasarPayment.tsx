@@ -6,6 +6,7 @@ import { ReactNode, useState } from "react";
 import { toast } from "sonner";
 
 import "./moyasar.css";
+import { BASE_URL } from "@/constant";
 
 declare global {
   interface Window {
@@ -23,6 +24,7 @@ interface IProps {
 
 const MoyasarPayment = ({ title, className, content, amount, financialTransferId }: IProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const url = `${process.env.NODE_ENV === "production" ? BASE_URL : "http://localhost:3000"}`;
 
   const handlePayment = () => {
     const script = document.createElement("script");
@@ -38,7 +40,7 @@ const MoyasarPayment = ({ title, className, content, amount, financialTransferId
           description: `${financialTransferId}`,
           publishable_api_key: "pk_test_F81FD9WePasb8wDQyFCJcM3Jf41ssFQtmPqZxAko",
           methods: ["creditcard"],
-          callback_url: `http://localhost:3000/payment?financialTransferId=${financialTransferId}`,
+          callback_url: `${url}/payment?financialTransferId=${financialTransferId}`,
           metadata: {
             financialTransferId,
           },

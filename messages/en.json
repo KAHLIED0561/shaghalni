@@ -686,6 +686,14 @@
         "send": "Send offer",
         "success": "Offer sent successfully",
         "success_desc": "The offer has been successfully sent, you can now wait for the offer to be accepted"
+      },
+      "alert": {
+        "title": "Delete project",
+        "description": "Are you sure you want to delete this project? This action cannot be undone.",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "inProgress": "In progress...",
+        "deleted": "Project deleted successfully"
       }
     },
     "attachments": {

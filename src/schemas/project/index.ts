@@ -38,6 +38,7 @@ const ProjectSchema = z.object({
   ...ProjectSimpleSchema.shape,
   canApply: z.boolean(),
   canAccept: z.boolean(),
+  canDelete: z.boolean(),
   attachments: z.array(
     z.object({
       id: z.union([z.string(), z.number()]),

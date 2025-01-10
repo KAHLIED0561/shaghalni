@@ -7,6 +7,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 import { AddOffer } from "./add-offer";
 import type { Project } from "@/schemas/project";
+import DeleteProject from "./DeleteProject";
 
 export const ProjectDetails = async ({ project }: { project: Project }) => {
   const t = await getTranslations("projectDetails.project");
@@ -27,7 +28,9 @@ export const ProjectDetails = async ({ project }: { project: Project }) => {
               {t("by")}: <Link href={`/share/provider/${project.created_by}`}>{project.createdByName}</Link>
             </p>
           </div>
+
           {project.canApply && <AddOffer projectId={project.id} />}
+          {project.canDelete && <DeleteProject projectId={project.id} />}
         </div>
 
         {/* Description */}
