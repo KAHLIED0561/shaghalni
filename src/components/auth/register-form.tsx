@@ -202,7 +202,7 @@ export const RegisterForm = () => {
                       </FormControl>
                       <FormLabel className="text-garyClr -translate-y-[0.2rem]">
                         <span>{t("privacy_policy.aggree")}</span>{" "}
-                        <Link href="/privacy-policy" className="text-primaryClr font-medium hover:underline">
+                        <Link href="/terms-conditions" className="text-primaryClr font-medium hover:underline">
                           <span>{t("privacy_policy.terms")}</span>
                         </Link>
                       </FormLabel>
