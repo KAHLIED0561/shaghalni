@@ -13,9 +13,15 @@ export const AboutServicesSection = async () => {
   return (
     <section className="py-20">
       <div className="container space-y-8">
-        <h2 className="w-full text-center font-semibold text-5xl">
-          <span>{t("title.1")}</span> <span className="text-primaryClr-600">{t("title.2")}</span>
-        </h2>
+        <div className="space-y-6 max-w-2xl mx-auto">
+          <h2 className="w-full text-center font-semibold text-5xl">
+            <span>{t("title.1")}</span> <span className="text-primaryClr-600">{t("title.2")}</span>
+          </h2>
+
+          <p className="text-gray-600 text-center">
+            <span>{t("desc")}</span>
+          </p>
+        </div>
         <div className="flex justify-center gap-y-6 gap-5 flex-wrap md:flex-nowrap">
           {servicesList.map((service, index) => {
             const Icon = service.icon;
