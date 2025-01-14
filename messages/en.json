@@ -630,6 +630,33 @@
           "size": "Image size should be less than 4MB"
         }
       }
+    },
+    "receivePayment": {
+      "title": "Receive Payment",
+      "modal_description": "Select a payment method to receive your payments",
+      "save_btn": "Save Changes",
+      "cancel_btn": "Cancel",
+      "updated": "Profile updated successfully",
+      "updated_desc": "Your profile has been updated successfully.",
+      "payout_type": {
+        "bank": "Bank Account",
+        "wallet": "Wallet"
+      },
+      "IBAN": {
+        "placeholder": "Enter your IBAN"
+      },
+      "country": {
+        "label": "Country",
+        "placeholder": "Write your country"
+      },
+      "city": {
+        "label": "City",
+        "placeholder": "Write your city"
+      },
+      "wallet-phone": {
+        "label": "Phone Number for Wallet",
+        "placeholder": "+966"
+      }
     }
   },
   "projects": {

@@ -40,7 +40,7 @@ export const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-secondaryClr from-[20%] sm:from-[2%] via-secondaryClr-400/20 sm:via-transparent -z-10"></div>
       <div className="pt-24 container text-white flex flex-col justify-evenly 3xl:justify-center 3xl:gap-24 4xl:justify-center 4xl:gap-[min(10%,10rem)] space-y-8 pb-6">
         <div className="space-y-8">
-          <h1 className="font-semibold leading-tight text-4xl xs:text-5xl sm:text-7xl 4xl:text-9xl">
+          <h1 className="font-semibold text-2xl xs:text-3xl sm:text-5xl 4xl:text-6xl !leading-normal">
             <span className="block">{t("hero.title")}</span>
             <span className="block">{t("hero.subtitle")}</span>
           </h1>

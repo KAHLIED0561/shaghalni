@@ -56,8 +56,35 @@ export const EngCustomerProfileSchema = object({
   }),
 });
 
+export const PaymentDetailsSchema = object({
+  payout_type: string().refine((type) => ["BANK", "WALLET"].includes(type), { message: "نوع التحويل غير صالح" }),
+  IBAN: string().optional(),
+  wallet_phone: string().optional(),
+  country: string().optional(),
+  city: string().optional(),
+}).superRefine((data, ctx) => {
+  if (data.payout_type === "BANK") {
+    if (!data.IBAN) {
+      ctx.addIssue({
+        path: ["IBAN"],
+        message: "رقم الحساب مطلوب لتحويل البنك",
+        code: "custom",
+      });
+    }
+  } else if (data.payout_type === "WALLET") {
+    if (!data.wallet_phone) {
+      ctx.addIssue({
+        path: ["wallet_phone"],
+        message: "رقم الجوال مطلوب لتحويل المحفظة",
+        code: "custom",
+      });
+    }
+  }
+});
+
 export type Role = z.infer<typeof RoleSchema>;
 export type Profile = z.infer<typeof ProfileSchema>;
 export type CustomerProfile = z.infer<typeof CustomerProfileSchema>;
 export type FreelancerProfile = z.infer<typeof FreelancerProfileSchema>;
 export type EngCustomerProfile = z.infer<typeof EngCustomerProfileSchema>;
+export type PaymentDetails = z.infer<typeof PaymentDetailsSchema>;

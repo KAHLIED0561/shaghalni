@@ -14,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import { useGetData } from "@/hooks/useFetch";
 import { ModalType, useModalStore } from "@/hooks/useModalStore";
 
+import { ReceivePayment } from "./ReceivePayment";
 import { BASE_URL } from "@/constant";
 import { CustomerProfile, EngCustomerProfile, FreelancerProfile, Role } from "@/schemas/user";
 
@@ -60,6 +61,7 @@ export const ProfileHeader = ({ role }: ProfileHeaderProps) => {
   };
 
   if (isLoading || !user) return null;
+
   return (
     <section className="py-8 space-y-8">
       <div className="flex flex-col sm:flex-row items-center gap-y-4 gap-x-8">
@@ -84,6 +86,9 @@ export const ProfileHeader = ({ role }: ProfileHeaderProps) => {
           <p className="text-gray-400 text-lg mt-2 text-center sm:text-start">{user.email}</p>
           <div className="flex flex-col xxs:flex-row items-center gap-4 mt-6">
             <Button onClick={handleOpenModal}>{t("editBtn")}</Button>
+
+            {(isFreelancer || isEngineering) && <ReceivePayment defaultValues={{}} />}
+
             <Button variant="outline" onClick={handleCopy} className="flex items-center gap-2">
               <Link size={24} />
               <span>{t("copyBtn")}</span>
