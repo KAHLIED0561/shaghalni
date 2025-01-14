@@ -37,6 +37,7 @@ export const ProfileHeader = ({ role }: ProfileHeaderProps) => {
   const isCustomer = role === "CUSTOMER" || user?.role === "CUSTOMER";
   const isFreelancer = role === "FREELANCER" || user?.role === "FREELANCER";
   const isEngineering = role === "OFFICE" || user?.role === "OFFICE";
+  const isContractor = role === "CONTRACTOR" || user?.role === "CONTRACTOR";
 
   const handleCopy = () => {
     const url = `${process.env.NODE_ENV === "production" ? BASE_URL : "http://localhost:3000"}/share/${isCustomer ? "customer" : "provider"}/${user?.id}`;
@@ -87,7 +88,7 @@ export const ProfileHeader = ({ role }: ProfileHeaderProps) => {
           <div className="flex flex-col xxs:flex-row items-center gap-4 mt-6">
             <Button onClick={handleOpenModal}>{t("editBtn")}</Button>
 
-            {(isFreelancer || isEngineering) && <ReceivePayment defaultValues={{}} />}
+            {(isFreelancer || isEngineering || isContractor) && <ReceivePayment defaultValues={{}} />}
 
             <Button variant="outline" onClick={handleCopy} className="flex items-center gap-2">
               <Link size={24} />
