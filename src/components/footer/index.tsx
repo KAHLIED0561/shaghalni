@@ -1,16 +1,30 @@
+"use client";
+
 import { Mail, MapPin, Phone } from "lucide-react";
-import { getLocale, getTranslations } from "next-intl/server";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+
+import { useGetData } from "@/hooks/useFetch";
 
 import logoWhiteEn from "@/assets/images/logo-white-en.svg";
 import logoWhiteAr from "@/assets/images/logo-white.svg";
 
-export const Footer = async () => {
-  const locale = await getLocale();
-  const t = await getTranslations("footer");
-
+export const Footer = () => {
+  const locale = useLocale();
+  const t = useTranslations("footer");
   const isAr = locale === "ar";
+
+  const endpoint = "/content/contact-us";
+  const { data } = useGetData<{
+    content: {
+      email: "string";
+      phone: "string";
+      address: "string";
+    };
+  }>({ endpoint });
+
+  const contact = data?.status === "success" ? data?.response?.content : null;
 
   return (
     <footer className="w-full bg-secondaryClr pt-16 pb-8 text-white font-medium">
@@ -68,12 +82,12 @@ export const Footer = async () => {
                 <Phone className="size-4 fill-white" />
               </div>
               <Link
-                href={`https://wa.me/${t("col3.phone")}`}
+                href={`https://wa.me/${contact?.phone}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                0123456789
+                {contact?.phone}
               </Link>
             </li>
             <li className="flex items-center gap-2">
@@ -81,19 +95,19 @@ export const Footer = async () => {
                 <Mail className="size-4" />
               </div>
               <Link
-                href="mailto:info@shaghalni.sa"
+                href={`mailto:${contact?.email}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                info@shaghalni.sa
+                {contact?.email}
               </Link>
             </li>
             <li className="flex items-center gap-2">
               <div className="bg-white/20 p-2 w-fit rounded-full" title={t("col3.location")}>
                 <MapPin className="size-4" />
               </div>
-              <p className="hover:underline">{t("col3.location_value")}</p>
+              <p className="hover:underline">{contact?.address}</p>
             </li>
           </ul>
         </div>
