@@ -2,6 +2,7 @@ import { formatDate } from "date-fns";
 import { CalendarDaysIcon } from "lucide-react";
 import { getLocale } from "next-intl/server";
 import Image from "next/image";
+import ReactMarkdown from "react-markdown";
 
 import { getData } from "@/lib/request-server";
 
@@ -33,6 +34,7 @@ export default async function Page({ params: { id } }: BlogPageProps) {
           <span className="hidden xs:block">•</span>
           <span>{timeToRead}</span>
         </div>
+
         <Image
           src={image || "https://placehold.co/600x400.png"}
           alt={title}
@@ -43,7 +45,8 @@ export default async function Page({ params: { id } }: BlogPageProps) {
           className="w-full aspect-[5/3] object-cover rounded-lg"
           quality={80}
         />
-        <p>{description}</p>
+
+        <ReactMarkdown>{description}</ReactMarkdown>
       </article>
     </main>
   );
