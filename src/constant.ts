@@ -27,7 +27,7 @@ const PUBLIC_ROUTES = [
 ];
 const DEFAULT_LOGIN_REDIRECT = "/";
 const DEFAULT_LOGOUT_REDIRECT = "/sign-in";
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+const BASE_URL = "https://shaghalni.sa";
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 enum RequestType {
