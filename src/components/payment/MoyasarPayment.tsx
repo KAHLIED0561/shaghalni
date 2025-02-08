@@ -5,8 +5,11 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { ReactNode, useState } from "react";
 import { toast } from "sonner";
 
+
+
 import "./moyasar.css";
 import { BASE_URL } from "@/constant";
+
 
 declare global {
   interface Window {
@@ -38,7 +41,7 @@ const MoyasarPayment = ({ title, className, content, amount, financialTransferId
           amount,
           currency: "SAR",
           description: `${financialTransferId}`,
-          publishable_api_key: "pk_test_F81FD9WePasb8wDQyFCJcM3Jf41ssFQtmPqZxAko",
+          publishable_api_key: "pk_test_6afQHenM7vL3XDeUWYEVUi7gaou5R3KwFuhTiHWY",
           methods: ["creditcard"],
           callback_url: `${url}/payment?financialTransferId=${financialTransferId}`,
           metadata: {
