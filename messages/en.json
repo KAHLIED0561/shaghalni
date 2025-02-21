@@ -1022,6 +1022,13 @@
     "send": "Send",
     "sessionNotFound": "Start a new session to send and receive messages",
     "report": "Report",
-    "photo": "Photo"
+    "photo": "Photo",
+    "reported-success": "Report sent successfully",
+    "report-error": "An error occurred while reporting, please try again",
+    "report-account": "Report this account",
+    "message": "Message",
+    "placeholder": "Type your message...",
+    "save_btn": "Save Changes",
+    "cancel_btn": "Cancel"
   }
 }

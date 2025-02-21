@@ -1,8 +1,7 @@
 "use client";
 
 import { Button } from "../ui/button";
-import { ArrowLeftIcon, OctagonAlertIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { ArrowLeftIcon } from "lucide-react";
 import Image from "next/image";
 import { useContext, useEffect, useRef, useState } from "react";
 
@@ -14,10 +13,10 @@ import { ChatContext } from "@/providers/chat.context";
 
 import { ChatInput } from "./ChatInput";
 import { ChatMessage } from "./ChatMessage";
+import ReportChat from "./ReportChat";
 import { ChatSessionItem } from "@/schemas/chat";
 
 const ChatSession = ({ userId, newMessages }: { userId: string; newMessages?: ChatSessionItem }) => {
-  const t = useTranslations("chat");
   const headers = createHeaders();
   const messagesContentRef = useRef<HTMLDivElement | null>(null);
   const [localMessages, setLocalMessages] = useState<ChatSessionItem[]>([]);
@@ -75,11 +74,7 @@ const ChatSession = ({ userId, newMessages }: { userId: string; newMessages?: Ch
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="text-primaryClr flex items-center gap-2 hover:text-primaryClr-800">
-            <OctagonAlertIcon size={18} />
-
-            <span className="text-sm">{t("report")}</span>
-          </button>
+          <ReportChat sessionId={activeSession?.id} />
 
           <Button
             variant="default"
