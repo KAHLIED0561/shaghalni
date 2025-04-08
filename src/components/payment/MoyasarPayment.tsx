@@ -41,7 +41,7 @@ const MoyasarPayment = ({ title, className, content, amount, financialTransferId
           amount,
           currency: "SAR",
           description: `${financialTransferId}`,
-          publishable_api_key: "pk_test_6afQHenM7vL3XDeUWYEVUi7gaou5R3KwFuhTiHWY",
+          publishable_api_key: "pk_live_8qi4Ch5rAQAQ2tK6nAcaFMBgwj2T5E2Ru2emk2mz",
           methods: ["creditcard"],
           callback_url: `${url}/payment?financialTransferId=${financialTransferId}`,
           metadata: {
